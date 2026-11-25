@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Jus bt Us</title>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 24px;
+      background:
+        radial-gradient(
+          circle at center,
+          #272727 0%,
+          #111111 58%,
+          #050505 100%
+        );
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content {
+      width: min(760px, 100%);
+      padding: clamp(36px, 7vw, 72px)
+               clamp(24px, 6vw, 60px);
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 28px;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.48);
+      text-align: left;
+    }
+
+    /* Temporary text heading; remove after adding the logo. */
+    .temporary-logo {
+      margin: 0 0 36px;
+      color: #ffffff;
+      font-size: clamp(3.2rem, 12vw, 7rem);
+      font-weight: 800;
+      line-height: 0.9;
+      letter-spacing: -0.07em;
+      text-align: center;
+    }
+
+    /* Use this class later for the SVG logo. */
+    .logo {
+      display: block;
+      width: min(520px, 90%);
+      height: auto;
+      margin: 0 auto 36px;
+    }
+
+    .introduction {
+      margin: 0;
+      color: #ffffff;
+      font-size: clamp(1.25rem, 3.2vw, 1.7rem);
+      font-weight: 700;
+      line-height: 1.45;
+    }
+
+    .body-copy {
+      margin-top: 56px;
+    }
+
+    .body-copy p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: clamp(1rem, 2.4vw, 1.2rem);
+      line-height: 1.7;
+    }
+
+    .body-copy p + p {
+      margin-top: 28px;
+    }
+
+    .qr-reference {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    @media (max-width: 520px) {
+      body {
+        padding: 14px;
+      }
+
+      .content {
+        border-radius: 20px;
+      }
+
+      .body-copy {
+        margin-top: 42px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="content">
+
+    <p class="introduction">
+      Jus bt Us (as in, “just between us”) is a b2b experience
+      with Charlotte DJs Yorgy and Nash.
+    </p>
+
+    <div class="body-copy">
+      <p>
+        You received this card at one of our shows... err uh...
+        <strong><em>shindigs</em></strong>
+      </p>
+
+      <p>
+        Come back here <span class="qr-reference">December 12th</span> to revisit
+        that experience: an audio recording of the night along with
+        behind-the-scenes footage.
+      </p>
+    </div>
+
+  </main>
+</body>
+</html>
